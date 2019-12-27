@@ -1,0 +1,17 @@
+{
+  "AccessKeyId": "xxxxxx",
+  "AccessKeySecret": "xxxxxx",
+  "DomainName": "xxx.com",
+  "SubDomains": [
+    {
+      "Type": "A",
+      "RR": "sub1",
+      "Interface": "eth0"
+    },
+    {
+      "Type": "AAAA",
+      "RR": "sub2",
+      "Interface": "eth1"
+    }
+  ]
+}
