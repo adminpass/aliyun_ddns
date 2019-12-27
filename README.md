@@ -6,21 +6,21 @@
 2. 编辑 **settings.json**
 ```json
 {
-  	"AccessKeyId": "xxxxxx",
-  	"AccessKeySecret": "xxxxxx",
-  	"DomainName": "xxx.com",
-  	"SubDomains": [
-    	{
-      	"Type": "A",
-      	"RR": "sub1",
-      	"Interface": "eth0"
-    	},
-    	{
-      	"Type": "AAAA",
-      	"RR": "sub2",
-      	"Interface": "eth1"
-    	}
-  	]
+  "AccessKeyId": "xxxxxx",
+  "AccessKeySecret": "xxxxxx",
+  "DomainName": "xxx.com",
+  "SubDomains": [
+    {
+      "Type": "A",
+      "RR": "sub1",
+      "Interface": "eth0"
+    },
+    {
+      "Type": "AAAA",
+      "RR": "sub2",
+      "Interface": "eth1"
+    }
+  ]
 }
 ```
 3. 执行 **./aliyun_ddns_xxx**
