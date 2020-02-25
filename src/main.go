@@ -104,8 +104,12 @@ func getNetInterfaceInfo() {
 					}
 					if ipnet.IP.To4() != nil {
 						ip.Ipv4 = ipAddr
+						break
 					} else if ipnet.IP.To16() != nil {
-						ip.Ipv6 = ipAddr
+						if !strings.Contains(ipAddr, "::") {
+							ip.Ipv6 = ipAddr
+							break
+						}
 					}
 				}
 			}
